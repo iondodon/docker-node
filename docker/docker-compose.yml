@@ -5,8 +5,6 @@ services:
       build:
         context: ./node
       volumes:
-        - .:/usr/src/app
+        - ../:/usr/src/app
       ports:
         - "49160:8080"
-
-    nginx:
